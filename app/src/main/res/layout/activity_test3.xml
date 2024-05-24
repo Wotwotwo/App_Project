@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test3"
+    android:background="#B3DD8649">
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="135dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cart_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/food"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/terra_fries"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/cart_box"
+            android:fontFamily="@font/inter_light"
+            android:gravity="center"
+            android:text="1x"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="160dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Tera Fries"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="150dp"
+            android:layout_below="@id/name"
+            android:fontFamily="@font/inter_light"
+            android:text="Potato corner \nsour cream"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="17dp"
+            android:layout_below="@id/details"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/food"
+            android:background="?android:attr/selectableItemBackground"
+            android:fontFamily="@font/inter_light"
+            android:gravity="left"
+            android:text="Edit"
+            android:textColor="#3E749C"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/inter_light"
+            android:text="255.00"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

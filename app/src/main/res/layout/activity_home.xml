@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/resturaunts"
+        android:layout_width="248dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="All Restaurants"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/blndfold__5__removebg_preview_1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="88dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/gato_enojado_removebg_preview_3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/download_removebg_preview_2" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="380dp"
+        android:layout_height="41dp"
+        android:drawableStart="@drawable/magnifying_glass"
+        android:ems="10"
+        android:hint="Find food or a restaurant"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/R"
+        android:layout_width="248dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Reccomend For You"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="408dp"
+        android:layout_height="122dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/reccomended1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                app:srcCompat="@drawable/rectangle_10"
+                tools:layout_editor_absoluteX="117dp"
+                tools:layout_editor_absoluteY="443dp" />
+
+            <ImageButton
+                android:id="@+id/reccomended2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                app:srcCompat="@drawable/rectangle_11"
+                tools:layout_editor_absoluteX="253dp"
+                tools:layout_editor_absoluteY="432dp" />
+
+            <ImageButton
+                android:id="@+id/reccomended3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                app:srcCompat="@drawable/rectangle_12"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="342dp" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="310dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resturaunts">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="2">
+
+            <RelativeLayout
+                android:id="@+id/Potato_Corner"
+                android:layout_width="185dp"
+                android:layout_height="213dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shop_container"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="centerInside"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/rectangle_14" />
+
+                <TextView
+                    android:id="@+id/shop1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView1"
+                    android:layout_alignLeft="@id/imageView1"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Potato Corner"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/shoplocation1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop1"
+                    android:layout_alignLeft="@id/imageView1"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Front Caf"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/IDK"
+                android:layout_width="185dp"
+                android:layout_height="213dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shop_container"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="centerInside"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/rectangle_11" />
+
+                <TextView
+                    android:id="@+id/shop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView2"
+                    android:layout_alignLeft="@id/imageView2"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Shawarma"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/shoplocation2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop2"
+                    android:layout_alignLeft="@id/imageView2"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Front Caf"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/Shawarma"
+                android:layout_width="185dp"
+                android:layout_height="213dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shop_container"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="centerInside"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/rectangle_17" />
+
+                <TextView
+                    android:id="@+id/shop3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView3"
+                    android:layout_alignLeft="@id/imageView3"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Shawarma"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/shoplocation3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shop3"
+                    android:layout_alignLeft="@id/imageView3"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Front Caf"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </GridLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homebtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="4dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_70" />
+
+    <ImageButton
+        android:id="@+id/actbtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homebtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_73" />
+
+    <ImageButton
+        android:id="@+id/paymentbtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/actbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_71" />
+
+    <ImageButton
+        android:id="@+id/accountbtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="4dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toEndOf="@+id/paymentbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_72" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

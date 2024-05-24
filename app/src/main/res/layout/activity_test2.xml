@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FoodContainer"
+    android:layout_width="355dp"
+    android:layout_height="180dp"
+    android:layout_marginLeft="15pt"
+    android:layout_marginTop="20dp">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/Container"
+        android:layout_width="355dp"
+        android:layout_height="180dp">
+
+        <RelativeLayout
+            android:id="@+id/ContainerL"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/food_holder">
+
+
+            <ImageView
+                android:id="@+id/Product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:srcCompat="@drawable/terra_fries"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ContainerR"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-40dp"
+            android:layout_toEndOf="@id/ContainerL"
+            android:background="@drawable/food_information_holder">
+
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/inter"
+                android:text="Tera Fries"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Name"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter"
+                android:text="255.00"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/account"
+    tools:context=".account">
+
+    <TextView
+        android:id="@+id/Number"
+        android:layout_width="363dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundstyle2"
+        android:fontFamily="@font/inter_medium"
+        android:paddingStart="10sp"
+        android:text="09XX-XXXX-XXX"
+        android:gravity="center_vertical"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <TextView
+        android:id="@+id/PhonePlace"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Phone Number"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.743" />
+
+    <TextView
+        android:id="@+id/DepartmentPlace"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Department"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <TextView
+        android:id="@+id/NamePlace"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Name"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="363dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundstyle2"
+        android:fontFamily="@font/inter_medium"
+        android:paddingStart="10sp"
+        android:text="Username Value"
+        android:textSize="28sp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <TextView
+        android:id="@+id/Department"
+        android:layout_width="363dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundstyle2"
+        android:fontFamily="@font/inter_medium"
+        android:paddingStart="10sp"
+        android:text="Department Value"
+        android:textSize="28sp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/username"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="393dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/homebtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="4dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_70" />
+
+    <ImageButton
+        android:id="@+id/actbtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homebtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_73" />
+
+    <ImageButton
+        android:id="@+id/paymentbtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/actbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_71" />
+
+    <ImageButton
+        android:id="@+id/accountbtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="4dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toEndOf="@+id/paymentbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_72" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

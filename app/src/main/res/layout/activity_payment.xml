@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment"
+    tools:context=".Payment">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_medium"
+        android:text="Payment"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Order Summary"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Add items"
+        android:textAllCaps="false"
+        android:textColor="#0065B5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="312dp"
+        android:background="@drawable/cart_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+        <ScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/itemname"
+                        android:layout_width="150dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="90dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Tera Fries"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/details"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/itemname"
+                        android:layout_marginLeft="90dp"
+                        android:fontFamily="@font/inter"
+                        android:text="Potato Corner \nSour Cream"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/editing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/details"
+                        android:layout_marginLeft="90dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="left"
+                        android:text="Edit"
+                        android:textAllCaps="false"
+                        android:textColor="#0065B5" />
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/cart_box">
+
+                        <TextView
+                            android:id="@+id/amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/inter_light"
+                            android:gravity="center"
+                            android:text="1x"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="250dp"
+                        android:fontFamily="@font/inter_light"
+                        android:text="255.00"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_below="@+id/scrollView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="1dp">
+
+
+
+            <View
+                android:id="@+id/top_line"
+                android:layout_width="340dp"
+                android:layout_height="1dp"
+                android:background="#ABA9A9"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true" />
+
+
+            <TextView
+                android:id="@+id/holder"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Total"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/totalprice"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/inter_light"
+                android:text="P255.00"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/methodholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Payment Details"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="86dp"
+        android:background="@drawable/cart_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/methodholder"
+        app:layout_constraintVertical_bias="0.146">
+
+        <TextView
+            android:id="@+id/paymentoption"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/inter"
+            android:text="Cash"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imageView11"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="260dp"
+            app:srcCompat="@drawable/arrow_9"
+            android:background="?android:attr/selectableItemBackground"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gato_enojado_removebg_preview_8" />
+    <ImageButton
+        android:id="@+id/homebtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="4dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_70" />
+
+    <ImageButton
+        android:id="@+id/actbtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homebtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_73" />
+
+    <ImageButton
+        android:id="@+id/paymentbtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/actbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_71" />
+
+    <ImageButton
+        android:id="@+id/accountbtn"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="4dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toEndOf="@+id/paymentbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_72" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
